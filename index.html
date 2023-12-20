@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/confirmPage.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/invite.css">
+  <link rel="stylesheet" href="./styles/shedule.css">
+  <link rel="stylesheet" href="./styles/proposal.css">
+  <link rel="stylesheet" href="./styles/dresscode.css">
+  <link rel="stylesheet" href="./styles/timer.css">
+  <link rel="stylesheet" href="./styles/gift.css">
+  <link rel="stylesheet" href="./styles/form.css">
+  <link rel="stylesheet" href="./styles/place.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script defer src="./scripts/confirm.js"></script>
+  <script defer src="./scripts/timer.js"></script>
+  <script defer src="./scripts/carousel.js"></script>
+  <script defer src="./scripts/popup.js"></script>
+  <script defer src="./scripts/form.js"></script>
+  <script defer src="./scripts/moveHeart.js"></script>
+  <script defer src="./scripts/nav.js"></script>
+  <script defer src="./scripts/showmore.js"></script>
+
+  <noscript>
+    <style>
+      .simplebar-content-wrapper {
+        scrollbar-width: auto;
+        -ms-overflow-style: auto;
+      }
+
+      .simplebar-content-wrapper::-webkit-scrollbar,
+      .simplebar-hide-scrollbar::-webkit-scrollbar {
+        display: initial;
+        width: initial;
+        height: initial;
+      }
+    </style>
+  </noscript>
+
+  <title>Свадьба</title>
+</head>
+
+<body>
+  <div class="confirm flex none">
+    <div class="confirm__wrapper">
+      <p class="confirm__name"><span class="name">Имя</span><span>,</span></p>
+      <p class="confirm__question uppercase">Заинтригован?</p>
+      <button class="btn confirm__btn">
+        Да!
+      </button>
+    </div>
+  </div>
+  <div class="site none">
+    <header class="header">
+      <div class="burger-box">
+        <div class="container flex burger-wrapper">
+          <p class="burger-hash uppercase">#тут будет хештэг</p>
+          <button class="burger flex">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </div>
+      </div>
+      <div class="container header__container">
+        <nav class="nav header__nav flex">
+          <div class="nav_top_back">
+            <!-- css -->
+          </div>
+          <button class="close-nav flex">
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav__list flex">
+            <li class="nav__item">
+              <a href="#shedule" class="nav__link">Программа мероприятия</a>
+            </li>
+            <li class="nav__item">
+              <a href="#dresscode" class="nav__link">Dress code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#timer" class="nav__link">Обратный отсчет</a>
+            </li>
+            <li class="nav__item  form__link">
+              <a href="#section__form" class="nav__link">Ваш ответ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">Место проведения</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__banner">
+          <div class="banner__wrapper flex">
+            <h2 class="banner-time flex">
+              <p class="header__time">15:30</p>
+              <p class="uppercase header__month">5 июля</p>
+              <p class="header__year">2024</p>
+            </h2>
+            <h1 class="banner-name flex">
+              <p class="uppercase">Владислав</p>
+              <p class="uppercase">Юлия</p>
+            </h1>
+            <div class="move-heart banner__heart-big-wrapper">
+              <div class="banner__heart-big image-box">
+                <img src="./img/header/big-heart.png" alt="">
+              </div>
+            </div>
+            <div class="move-heart banner__heart-small-wrapper">
+              <div class="banner__heart-small image-box">
+                <img src="./img/header/small-heart.png" alt="">
+              </div>
+            </div>
+            <div class="banner__paint banner__img image-box">
+              <img src="./img/header/paint.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="image-box header__he header__photo">
+          <img src="./img/header/he.png" alt="жених">
+        </div>
+        <div class="image-box header__she header__photo">
+          <img src="./img/header/she.png" alt="невеста">
+          <div class="move-heart she-heart-wpapper">
+            <div class="she-heart image-box ">
+              <img src="./img/header/she-heart.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="move-heart she-heart-wpapper heart-mobile">
+          <div class="she-heart image-box ">
+            <img src="./img/header/she-heart.png" alt="">
+          </div>
+        </div>
+        <div class="header-light left-header-light">
+          <!-- css -->
+        </div>
+        <div class="header-light right-header-light">
+          <!-- css -->
+        </div>
+      </div>
+    </header>
+    <section class="section invite">
+      <div class="invite__top">
+        <div class="mute-line invite__mute height-line flex">
+          <div class="flex invite__date">
+            <p class="section__line-text invite__date_item invite-line-text-desktop">05.07.2024</p>
+            <p class="section__line-text invite__date_item invite-line-text-desktop">05.07.2024</p>
+            <p class="section__line-text invite__date_item invite-line-text-desktop invite-line-text-tablet">05.07.2024
+            </p>
+            <p class="section__line-text invite__date_item">05.07.2024</p>
+            <p class="section__line-text invite__date_item">05.07.2024</p>
+          </div>
+          <div aria-hidden="true" class="flex invite__date">
+            <p class="section__line-text invite__date_item invite-line-text-desktop">05.07.2024</p>
+            <p class="section__line-text invite__date_item invite-line-text-desktop">05.07.2024</p>
+            <p class="section__line-text invite__date_item invite-line-text-desktop invite-line-text-tablet">05.07.2024
+            </p>
+            <p class="section__line-text invite__date_item">05.07.2024</p>
+            <p class="section__line-text invite__date_item">05.07.2024</p>
+          </div>
+        </div>
+        <div class="black-line invite__black-top flex height-line">
+          <div class="invite__mute-animate flex">
+            <p class="invite__mute-text section__line-text invite-line-text-desktop">Увидимся на свадьбе!</p>
+            <p class="invite__mute-text section__line-text">Увидимся на свадьбе!</p>
+          </div>
+          <div aria-hidden="true" class="invite__mute-animate flex">
+            <p class="invite__mute-text section__line-text invite-line-text-desktop">Увидимся на свадьбе!</p>
+            <p class="invite__mute-text section__line-text">Увидимся на свадьбе!</p>
+          </div>
+        </div>
+      </div>
+      <div class="invite__content container">
+        <div class="invite__content-wrapper">
+          <h2 class="section__title invite__title">
+            <span>
+              Дорогие родные и друзья!
+            </span>
+            <div class="invite-paint image-box">
+              <img src="./img/invite/invite-paint.png" alt="">
+            </div>
+          </h2>
+          <p class="invite__subtitle">
+            Мы счастливы пригласить вас на важное событие
+            в жизни - нашу свадьбу!
+          </p>
+          <p class="paragraph invite__paragraph">
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей
+            недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке наполнит
+            любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей
+            недоумение.
+          </p>
+        </div>
+      </div>
+      <div class="invite__bottom flex">
+        <div class="black-line invite__black-bottom flex height-line">
+          <div class="hash-animate invite__hash flex">
+            <p class="section__line-text invite-line-text-desktop">#Тутбудетхештег</p>
+            <p class="section__line-text">#Тутбудетхештег</p>
+          </div>
+          <div aria-hidden="true" class="hash-animate invite__hash flex">
+            <p class="section__line-text invite-line-text-desktop">#Тутбудетхештег</p>
+            <p class="section__line-text">#Тутбудетхештег</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section shedule" id="shedule">
+      <div class="container shedule__container">
+        <div class="shedule__wrapper flex">
+          <div class="shedule__left flex">
+            <div class="title-wrapper">
+              <h2 class="section__title shedule__title">
+                Расписание
+                <span class="shedule__subtitle">
+                  свадебного дня
+                </span>
+                <div class="shedule-light">
+                  <!-- css -->
+                </div>
+              </h2>
+            </div>
+            <div class="link-wrapper shedule__link-desktop">
+              <div class="link-box">
+                <button class="btn shedule__popup_open">План рассадки</button>
+                <div class="image-box shedule-paint">
+                  <img src="./img/shedule/shedule-paint.png" alt="">
+                </div>
+                <div class="image-box shedule-photo">
+                  <img src="./img/shedule/shadule-photo.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shedule__right">
+            <ul class="shedule__list">
+              <li class="shedule__item">
+                <span class="shedule__time">
+                  15:30
+                </span>
+                <span class="shedule__event">
+                  Автобус до <span class="pink-text">Бобрового</span>
+                </span>
+              </li>
+              <li class="shedule__item">
+                <span class="shedule__time">
+                  16:30
+                </span>
+                <span class="shedule__event">
+                  Сбор гостей в <span class="pink-text">Бобровом</span>
+                </span>
+              </li>
+              <li class="shedule__item">
+                <span class="shedule__time">
+                  17:00
+                </span>
+                <span class="shedule__event">
+                  Начало свадебной церемонии
+                </span>
+              </li>
+              <li class="shedule__item">
+                <span class="shedule__time">
+                  18:00
+                </span>
+                <span class="shedule__event">
+                  Начало торжества
+                </span>
+              </li>
+              <li class="shedule__item">
+                <span class="shedule__time">
+                  19:00
+                </span>
+                <span class="shedule__event">
+                  Еще пункт
+                </span>
+              </li>
+              <li class="shedule__item">
+                <span class="shedule__time ">
+                  20:00
+                </span>
+                <span class="shedule__event">
+                  Еще пункт
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="link-wrapper shedule__link-mobile">
+          <div class="link-box">
+            <button class="btn shedule__popup_open shedule__popup_open-mobile">План рассадки</button>
+            <div class="image-box shedule-paint">
+              <img src="./img/shedule/shedule-paint.png" alt="">
+            </div>
+            <div class="image-box shedule-photo">
+              <img src="./img/shedule/shadule-photo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shedule__popup popup hidden">
+        <div class="top-popup popup-back">
+          <!-- css -->
+        </div>
+        <div class="bottom-popup popup-back">
+          <!-- css -->
+        </div>
+        <div class="container popup__container flex">
+          <div class="shedule__window popup__window flex">
+            <div class="close-wrapper">
+              <button class="close__btn flex">
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+            <div class="scheme image-box">
+              <img src="./img/shedule/scheme.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section proposal">
+      <div class="proposal__top proposal__line flex">
+        <div class="mute-line height-line proposal__mute">
+          <!-- empty -->
+        </div>
+      </div>
+      <div class="proposal__content">
+        <div class="container proposal__container">
+          <h2 class="section__title proposal__title proposal__top-title">
+            Как Влад сделал предложение Юле
+          </h2>
+          <div class="proposal__history">
+            <div class="proposal__video">
+              <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/LW8JGz9cqCQ?si=YutdtSrXWMjgHTgD" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
+              </div>
+              <div class="video-paint image-box">
+                <img src="./img/proposal/proposal-paint.png" alt="">
+              </div>
+            </div>
+            <p class="paragraph proposal__paragraph">
+              Мы решили поехать с друзьями на Обское водохранилище, но с нами собрались слишком много человек, и Влад
+              решил, что это слишком... Предложил поехать на вечер раньше «как-будто провести время вместе без всех».
+              Юля конечно же поддержала эту идею, но тут все пошло не по плану Владика.
+            </p>
+            <p class="paragraph proposal__paragraph proposal-desktop">
+              От лица Влада: Мы решаем выезжать сразу после работы Юли, но тут она узнает, что нужно обязательно отнести
+              документы для поступления в магистратуру… Я думаю, ну ладно, все равно она туда раньше пойдет, чем бы
+              закончила работу, я ее сразу после заберу.
+            </p>
+            <p class="paragraph proposal__paragraph proposal-desktop">
+              Строю я маршрут, у меня все запланировано по времени, нас ждут в 9 вечера. Я приезжаю к ТГУ и жду… сначала
+              20 мин, 30 мин, 50… звоню: ну ты где? – очередь, я уже документы заполняю, говорю: давай быстрее! Она
+              вообще на расслабоне… Приходит и говорит: ты чего психуешь, мы же хотели вместе время провести, какая
+              разница, где, вдвоем же. Но я же не могу ей сказать, что у нас тайминг и я приготовил что-то, поугарали и
+              поехали, она еще говорит, ты так не несись, аккуратно езжай.Дальше еще интереснее, мне пишет видеограф,
+              что он не успевает к 9 приехать. Вот вы умеете тихо злиться и понимать, что все и идет не по плану?
+            </p>
+            <p class="paragraph proposal__paragraph proposal-desktop">
+              Наконец-то приезжаем мы на место, мы месяц назад отдыхали уже там, но небольшой компанией. А тут нам
+              говорят: «Все, проезд закрыт, машины мы не пускаем, оставляйте все здесь и несите в руках свои сумки!», а
+              там идти до нашего места мин 7-10. Юля говорит, ну давай поищем другое место для остановки… но у меня то
+              там все наготове и ждут нас.Но самое прикольное то, что нас видеограф должен был узнать, когда мы на
+              машине проехали и шли совсем с другой стороны, а тут без машины, еще и с другой стороны и Юлька говорит,
+              пошли искать другое место. Как-то я успеваю незаметно написать об изменениях в плане видеограф и нас еще
+              ждали музыканты. Я говорю, ну пошли хоть Марсю выгуляем по побережью, повезло, что Юля быстро
+              согласилась.Идем болтаем, видит в далеке Юля, что дрон летает, удивленно говорит, там походу у кого-то
+              съемка, я, естественно, где дрон, типа не вижу. Идем дальше и видим, что играют музыканты на саксофонах на
+              фоне яхта и это все снимают, говорю пойдем поближе послушаем: пошли, но тут Юля выдает: нет, зачем мы
+              ребятам будем мешать, я начинаю уговаривать, а она нет и все. Хорошо, что ребята сориентировались и
+              говорят: ….
+            </p>
+            <div class="proposal-light">
+              <!-- css -->
+            </div>
+          </div>
+          <p class="section__title proposal__title proposal__bottom-title proposal-desktop">
+            ...А как все было дальше <br> Вы узнаете на свадьбе!
+          </p>
+          <div class="proposal-mobile-btn">
+            <button class="btn proposal-more">Читать полностью</button>
+          </div>
+          <div class="proposal-mobile-text">
+            <p class="paragraph proposal__paragraph">
+              От лица Влада: Мы решаем выезжать сразу после работы Юли, но тут она узнает, что нужно обязательно отнести
+              документы для поступления в магистратуру… Я думаю, ну ладно, все равно она туда раньше пойдет, чем бы
+              закончила работу, я ее сразу после заберу.
+            </p>
+            <p class="paragraph proposal__paragraph">
+              Строю я маршрут, у меня все запланировано по времени, нас ждут в 9 вечера. Я приезжаю к ТГУ и жду… сначала
+              20 мин, 30 мин, 50… звоню: ну ты где? – очередь, я уже документы заполняю, говорю: давай быстрее! Она
+              вообще на расслабоне… Приходит и говорит: ты чего психуешь, мы же хотели вместе время провести, какая
+              разница, где, вдвоем же. Но я же не могу ей сказать, что у нас тайминг и я приготовил что-то, поугарали и
+              поехали, она еще говорит, ты так не несись, аккуратно езжай.Дальше еще интереснее, мне пишет видеограф,
+              что он не успевает к 9 приехать. Вот вы умеете тихо злиться и понимать, что все и идет не по плану?
+            </p>
+            <p class="paragraph proposal__paragraph">
+              Наконец-то приезжаем мы на место, мы месяц назад отдыхали уже там, но небольшой компанией. А тут нам
+              говорят: «Все, проезд закрыт, машины мы не пускаем, оставляйте все здесь и несите в руках свои сумки!», а
+              там идти до нашего места мин 7-10. Юля говорит, ну давай поищем другое место для остановки… но у меня то
+              там все наготове и ждут нас.Но самое прикольное то, что нас видеограф должен был узнать, когда мы на
+              машине проехали и шли совсем с другой стороны, а тут без машины, еще и с другой стороны и Юлька говорит,
+              пошли искать другое место. Как-то я успеваю незаметно написать об изменениях в плане видеограф и нас еще
+              ждали музыканты. Я говорю, ну пошли хоть Марсю выгуляем по побережью, повезло, что Юля быстро
+              согласилась.Идем болтаем, видит в далеке Юля, что дрон летает, удивленно говорит, там походу у кого-то
+              съемка, я, естественно, где дрон, типа не вижу. Идем дальше и видим, что играют музыканты на саксофонах на
+              фоне яхта и это все снимают, говорю пойдем поближе послушаем: пошли, но тут Юля выдает: нет, зачем мы
+              ребятам будем мешать, я начинаю уговаривать, а она нет и все. Хорошо, что ребята сориентировались и
+              говорят: ….
+            </p>
+            <p class="section__title proposal__title proposal__bottom-title">
+              ...А как все было дальше <br> Вы узнаете на свадьбе!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="proposal__bottom proposal__line flex">
+        <div class="mute-line height-line proposal__mute">
+          <!-- empty -->
+        </div>
+      </div>
+    </section>
+    <section class="section dresscode" id="dresscode">
+      <div class="container dresscode__container flex">
+        <div class="dresscode__description">
+          <h2 class="section__title dresscode__title">
+            Dress code
+          </h2>
+          <p class="dresscode__subtitle">
+            Мы будем рады, если вы поддержите стилистику нашей свадьбы в своих нарядах
+          </p>
+          <div class="dresscode__text">
+            <p class="paragraph dresscode__paragraph">
+              По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+              людей недоумение при попытках прочитать рыбу текст. В отличии от lorem ipsum, текст рыба на русском языке
+              наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен.
+            </p>
+            <p class="paragraph dresscode__paragraph">
+              По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+              людей недоумение при попытках прочитать рыбу текст.
+            </p>
+          </div>
+          <div class="dresscode-light">
+
+          </div>
+        </div>
+        <div class="dresscode__main">
+          <div class="colors-wrapper">
+            <button class="color-item color-silver">
+              <!-- css -->
+            </button>
+            <button class="color-item color-grey">
+              <!-- css -->
+            </button>
+            <button class="color-item color-pink">
+              <!-- css -->
+            </button>
+            <button class="color-item color-light-pink">
+              <!-- css -->
+            </button>
+          </div>
+          <div class="all-dress-wrapper">
+            <div class="dress-carousel he-dress-carousel">
+              <div class="carousel-wrapper">
+                <div class="he-dress-wrapper item-dress-wrapper">
+                  <div class="item-dress he-dress image-box">
+                    <img src="./img/dresscode/he-dress.png" alt="">
+                  </div>
+                  <div class="item-dress he-dress image-box">
+                    <img src="./img/dresscode/he-dress.png" alt="">
+                  </div>
+                  <div class="item-dress he-dress image-box">
+                    <img src="./img/dresscode/he-dress.png" alt="">
+                  </div>
+                  <div class="item-dress he-dress image-box">
+                    <img src="./img/dresscode/he-dress.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="icon-wrapper image-box">
+                <img src="./img/dresscode/man-icon.png" alt="">
+              </div>
+              <div class="controls-wrapper flex">
+                <button class="control prev">
+                  <!-- css -->
+                </button>
+                <button class="control next">
+                  <!-- css -->
+                </button>
+              </div>
+            </div>
+            <div class="dress-carousel she-dress-carousel">
+              <div class="carousel-wrapper">
+                <div class="she-dress-wrapper item-dress-wrapper">
+                  <div class="item-dress she-dress image-box">
+                    <img src="./img/dresscode/she-dress.png" alt="">
+                  </div>
+                  <div class="item-dress she-dress image-box">
+                    <img src="./img/dresscode/she-dress.png" alt="">
+                  </div>
+                  <div class="item-dress she-dress image-box">
+                    <img src="./img/dresscode/she-dress.png" alt="">
+                  </div>
+                  <div class="item-dress she-dress image-box">
+                    <img src="./img/dresscode/she-dress.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="icon-wrapper image-box">
+                <img src="./img/dresscode/woman-icon.png" alt="">
+              </div>
+              <div class="controls-wrapper flex">
+                <button class="control prev">
+                  <!-- css -->
+                </button>
+                <button class="control next">
+                  <!-- css -->
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn dresscode__popup_open">
+              Все варианты нарядов
+            </button>
+          </div>
+        </div>
+        <div class="dresscode__popup popup hidden">
+          <div class="top-popup popup-back">
+            <!-- css -->
+          </div>
+          <div class="bottom-popup popup-back">
+            <!-- css -->
+          </div>
+          <div class="container popup__container flex">
+            <div class="dresscode__window popup__window flex">
+              <div class="he-light">
+                <!-- css -->
+              </div>
+              <div class="popup__he popup__person">
+                <div class="icon-wrapper image-box">
+                  <img src="./img/dresscode/man-icon.png" alt="">
+                </div>
+                <div class="absolute__photo he-absolute-photo image-box">
+                  <img src="./img/dresscode/he-dress.png" alt="">
+                </div>
+
+                <div class="popup__picture he-picture image-box">
+                  <img src="./img/dresscode/tie.png" alt="">
+                </div>
+                <div class="popup__scrollbar_wrapper">
+                  <div class="popup__scrollbar" id="heScrollbar">
+                    <div class="popup__photo_list">
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress he-dress image-box">
+                          <img src="./img/dresscode/he-dress.png" alt="">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="vertical-line">
+                <!-- css -->
+              </div>
+              <div class="popup__she popup__person">
+                <div class="icon-wrapper image-box">
+                  <img src="./img/dresscode/woman-icon.png" alt="">
+                </div>
+                <div class="absolute__photo she-absolute-photo image-box">
+                  <img src="./img/dresscode/she-dress.png" alt="">
+                </div>
+                <div class="popup__picture she-picture image-box">
+                  <img src="./img/dresscode/ring.png" alt="">
+                  <div class="she-picture-light">
+                    <!-- css -->
+                  </div>
+                </div>
+                <div class="popup__scrollbar_wrapper">
+                  <div class="popup__scrollbar" id="sheScrollbar">
+                    <div class="popup__photo_list">
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                      <div class="popup__item_wrapper">
+                        <div class="item-dress she-dress image-box">
+                          <img src="./img/dresscode/she-dress.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="close-wrapper">
+                <button class="close__btn flex">
+                  <span>
+                    <!-- css -->
+                  </span>
+                  <span>
+                    <!-- css -->
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="line2 mute-line height-line flex">
+      <div class="line2-animate flex">
+        <p class="section__line-text invite__hash">Текст</p>
+        <p class="section__line-text invite__hash">Текст</p>
+      </div>
+      <div aria-hidden="true" class="line2-animate flex">
+        <p class="section__line-text invite__hash">Текст</p>
+        <p class="section__line-text invite__hash">Текст</p>
+      </div>
+    </div>
+    <section class="section timer" id="timer">
+      <div class="container timer__container">
+        <div class="timer__title-wrapper flex">
+          <h2 class="section__title timer__title">
+            До свадьбы осталось
+            <div class="timer-paint image-box">
+              <img src="./img/timer/timer-paint.png" alt="">
+            </div>
+          </h2>
+        </div>
+        <div class="timer__main">
+          <div class="timer__item flex">
+            <span class="timer__num timer__day">
+              00
+            </span>
+            <span class="timer__descr day__descr">
+              дней
+            </span>
+            <div class="time-light">
+              <!-- css -->
+            </div>
+          </div>
+          <div class="timer__item flex">
+            <span class="timer__num timer__hours">
+              00
+            </span>
+            <span class="timer__descr hours__descr">
+              часов
+            </span>
+            <div class="time-light">
+              <!-- css -->
+            </div>
+          </div>
+          <div class="timer__item flex">
+            <span class="timer__num timer__minutes">
+              00
+            </span>
+            <span class="timer__descr minutes__descr">
+              минут
+            </span>
+            <div class="time-light">
+              <!-- css -->
+            </div>
+          </div>
+          <div class="timer__item flex">
+            <span class="timer__num timer__seconds">
+              00
+            </span>
+            <span class="timer__descr seconds__descr">
+              секунд
+            </span>
+            <div class="time-light">
+              <!-- css -->
+            </div>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="#" class="btn">Присоединиться к свадебному чату</a>
+        </div>
+      </div>
+    </section>
+    <section class="section gift">
+      <div class="gift-top flex">
+        <div class="black-line height-line gift__black flex">
+          <div class="hash-animate flex">
+            <p class="section__line-text gift-desktop-text">#Тутбудетхештег</p>
+            <p class="section__line-text">#Тутбудетхештег</p>
+          </div>
+          <div aria-hidden="true" class="hash-animate flex">
+            <p class="section__line-text gift-desktop-text">#Тутбудетхештег</p>
+            <p class="section__line-text">#Тутбудетхештег</p>
+          </div>
+        </div>
+      </div>
+      <div class="container gift__container">
+        <h2 class="section__title gift__title">
+          Что можно подарить <br> нам на свадьбу?
+        </h2>
+        <div class="gift__content">
+          <p class="paragraph gift__paragraph">
+            Если вы хотите сделать подарок, мы будем рады деньгам.
+            Пожалуйста, не дарите нам цветы, мы очень расстроимся, если не сможем забрать их с собой. Цветы завянут, а
+            вот бутылочка вина нам очень подойдет в бар. Поэтому можно подарить вино, и обязательно напишите пожелание,
+            на какой повод нам стоит его открыть.
+          </p>
+          <div class="gift-heart image-box">
+            <img src="./img/gift/gift-heart.png" alt="">
+          </div>
+        </div>
+        <div class="gift-photo image-box">
+          <img src="./img/shedule/shadule-photo.png" alt="">
+        </div>
+      </div>
+      <div class="gift-bottom flex">
+        <div class="mute-line height-line gift__mute flex">
+          <!-- css -->
+        </div>
+      </div>
+    </section>
+    <section class="section section__form" id="section__form">
+      <div class="container form__container">
+        <h2 class="section__title form__title">
+          Нам важно Ваше мнение:
+        </h2>
+        <form class="form" id="form">
+          <input type="hidden" name="IvanovFamily">
+          <div class="form__fields">
+            <div class="form__item persons__item">
+              <p class="form__item_title">
+                <span class="form__item_num">
+                  1
+                </span>
+                Подтвердите свое присутствие на нашей свадьбе:
+              </p>
+              <div class="person-wrapper">
+                <div class="form__person">
+                  <input class="form__input person__checkbox" type="checkbox" name="petrpetrov" id="petrpetrov">
+                  <label for="petrpetrov" class="label check-label">Петр Петров</label>
+                </div>
+                <div class="form__person">
+                  <input class="form__input person__checkbox" type="checkbox" name="ivanivanov" id="ivanivanov">
+                  <label for="ivanivanov" class="label check-label">Иван Иванов</label>
+                </div>
+                <div class="form__person">
+                  <input class="form__input person__checkbox" type="checkbox" name="kirillkirilov" id="kirillkirilov">
+                  <label for="kirillkirilov" class="label check-label">Кирилл Кирилов</label>
+                </div>
+                <div class="form__person">
+                  <input class="form__input icant__checkbox" type="checkbox" name="cant" id="cant">
+                  <label for="cant" class="label check-label">Не смогу присутствовать</label>
+                </div>
+              </div>
+            </div>
+            <div class="invisible">
+              <div class="form__item">
+                <p class="form__item_title">
+                  <span class="form__item_num">
+                    2
+                  </span>
+                  Для того, чтобы все не потерялись и с легкостью добрались до места проведения нашего торжества, мы
+                  организуем трансфер от Лагерного сада. Но, если вы будете на машине и Вам не нужен трансфер, сообщите
+                  нам
+                  об этом:
+                </p>
+                <div class="transport-radio-wrapper">
+                  <div class="radio-box">
+                    <input class="form__input" type="radio" name="transport" value="bus" id="owncar" required>
+                    <label for="owncar" class="label radio-label">Приедем на автобусе</label>
+                  </div>
+                  <div class="radio-box">
+                    <input class="form__input" type="radio" name="transport" value="own car" id="bus" checked>
+                    <label for="bus" class="label radio-label">Приедем на машине</label>
+                  </div>
+                  <div class="radio-box">
+                    <input class="form__input special__transport_radio" type="radio" name="transport" value="special"
+                      id="special">
+                    <label for="special" class="label radio-label">Особая ситуация (опишите ниже в поле)</label>
+                  </div>
+                </div>
+                <textarea name="transport-field" class="textarea transport-field" disabled></textarea>
+              </div>
+              <div class="form__item">
+                <p class="form__item_title">
+                  <span class="form__item_num">
+                    3
+                  </span>
+                  Нужна ли вам помощь с организацией проживания в Томске на день свадьбы, или у вас уже есть место для
+                  проживания?
+                </p>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="place" value="need help" id="help" required checked>
+                  <label for="help" class="label radio-label">Нужна помощь</label>
+                </div>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="place" value="have place" id="haveplace">
+                  <label for="haveplace" class="label radio-label">Мне есть где жить</label>
+                </div>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="place" value="from Tomsk" id="fromtomsk">
+                  <label for="fromtomsk" class="label radio-label">Я из Томска</label>
+                </div>
+              </div>
+              <div class="form__item">
+                <p class="form__item_title">
+                  <span class="form__item_num">
+                    4
+                  </span>
+                  Являетесь ли вы вегетарианцем?
+                </p>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="vegetarian" value="yes" id="veget" required checked>
+                  <label for="veget" class="label radio-label">Да</label>
+                </div>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="vegetarian" value="no" id="noveget">
+                  <label for="noveget" class="label radio-label">Нет</label>
+                </div>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="vegetarian" value="im vegan" id="vegan">
+                  <label for="vegan" class="label radio-label">Я - веган</label>
+                </div>
+              </div>
+              <div class="form__item">
+                <p class="form__item_title">
+                  <span class="form__item_num">
+                    5
+                  </span>
+                  Останетесь на второй день торжества?
+                </p>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="secondDay" value="yes" id="second" required checked>
+                  <label for="second" class="label radio-label">Да</label>
+                </div>
+                <div class="radio-box">
+                  <input class="form__input" type="radio" name="secondDay" value="no" id="nosecond">
+                  <label for="nosecond" class="label radio-label">Нет</label>
+                </div>
+              </div>
+              <div class="form__item last__item">
+                <p class="form__item_title">
+                  <span class="form__item_num">
+                    6
+                  </span>
+                  Если у вас есть какие-то дополнительные пожелания, предложения или комментарии, пожалуйста, напишите
+                  их
+                  здесь:
+                </p>
+                <textarea name="addition" class="textarea add-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrapper">
+            <div class="form__btn-box">
+              <button type="submit" class="btn form__btn">
+                Отправить
+              </button>
+              <div class="form__btn-paint image-box">
+                <img src="./img/form/form-paint.png" alt="">
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="form-top-photo image-box">
+          <img src="./img/shedule/shadule-photo.png" alt="">
+          <div class="form-top-light">
+            <!-- css -->
+          </div>
+        </div>
+        <div class="form-bottom-photo image-box">
+          <img src="./img/shedule/shadule-photo.png" alt="">
+          <div class="form-bottom-light">
+            <!-- css -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="success flex none">
+      <div class="success__window flex">
+        <p class="success__send uppercase">
+          Успешно отправлено
+        </p>
+        <p class="success__thanks">
+          Спасибо!
+        </p>
+        <div class="success__image image-box">
+          <img src="./img/form/ok.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="line-1 height-line">
+      <img src="./img/common/line.png" alt="">
+    </div>
+    <section class="section place" id="place">
+      <div class="container place__container flex">
+        <div class="place__left">
+          <h2 class="section__title place__title">
+            Место проведения нашей свадьбы
+          </h2>
+          <div class="place__right flex place-mobile">
+            <h3 class="place__subtitle">
+              Загородный клуб "Бобровое"
+            </h3>
+            <address class="address">
+              Томская обл., <br>
+              окрестности д. Овражное,<br>
+              уч. 16/2
+            </address>
+            <div class="map__wrapper image-box">
+              <div class="map">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec4a2bddb3801ba9b38dcbdbed44a84fa54efa2d3a45b3dadc823627e123fc78&amp;source=constructor"
+                  frameborder="0">
+                </iframe>
+              </div>
+              <img src="./img/place/phone.png" alt="">
+              <div class="map-light">
+                <!-- css -->
+              </div>
+            </div>
+          </div>
+          <p class="paragraph place__paragraph">
+            Двигайтесь в сторону аэропорта, затем сверните в с. Богашёво. Ведите движение по главной дороге до 8 км, где
+            сверните в д. Белоусово. Продолжайте движение по гравийной дороге, не доезжая д. Овражное.
+          </p>
+          <div class="place-btn-wrapper">
+            <a href="#" class="btn">Фото появятся тут</a>
+          </div>
+          <div class="place__left-light">
+            <!-- css -->
+          </div>
+        </div>
+        <div class="place__right flex place-desktop">
+          <h3 class="place__subtitle">
+            Загородный клуб "Бобровое"
+          </h3>
+          <address class="address">
+            Томская обл., <br>
+            окрестности д. Овражное,<br>
+            уч. 16/2
+          </address>
+          <div class="map__wrapper image-box">
+            <div class="map">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Aec4a2bddb3801ba9b38dcbdbed44a84fa54efa2d3a45b3dadc823627e123fc78&amp;source=constructor"
+                frameborder="0">
+              </iframe>
+            </div>
+            <img src="./img/place/phone.png" alt="">
+            <div class="map-light">
+              <!-- css -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top flex">
+          <a href="" class="btn footer__btn">Присоединиться к свадебному чату</a>
+          <p class="footer__hash">#Тут будет хештег</p>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav_list flex">
+            <li class="nav__item">
+              <a href="#shedule" class="nav__link">Программа мероприятия</a>
+            </li>
+            <li class="nav__item">
+              <a href="#dresscode" class="nav__link">Dress code</a>
+            </li>
+            <li class="nav__item">
+              <a href="#timer" class="nav__link">Обратный отсчет</a>
+            </li>
+            <li class="nav__item  form__link">
+              <a href="#section__form" class="nav__link">Ваш ответ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#place" class="nav__link">Место проведения</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom flex">
+          <div class="footer__phone">
+            <span>Организатор: </span>
+            <a href="tel:+77077777777" class="phone-number">7 (707) 777-77-77</a>
+          </div>
+          <div class="footer__phone">
+            <span>Владислав: </span>
+            <a href="tel:+77077777777" class="phone-number">7 (707) 777-77-77</a>
+          </div>
+          <div class="footer__phone">
+            <span>Юлия: </span>
+            <a href="tel:+77077777777" class="phone-number">7 (707) 777-77-77</a>
+          </div>
+        </div>
+        <div class="footer-paint image-box">
+          <img src="./img/footer/footer-paint.png" alt="">
+        </div>
+      </div>
+      <div class="mute-line height-line footer__mute">
+        <!-- css -->
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+.footer {
+  position: relative;
+  background-color: var(--black);
+  transform-origin: top left;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  transform: skewY(2deg);
+  transform-origin: right top;
+  background: #F2F2F2;
+}
+
+.footer__container {
+  position: relative;
+  padding: 120px 28px 75px 28px;
+}
+
+.footer-paint {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  width: 217px;
+  height: 167px;
+}
+
+.footer__top {
+  justify-content: flex-start;
+  margin-bottom: 75px;
+}
+
+.footer__btn {
+  margin-right: 100px;
+  border: 1px solid var(--green);
+  background: transparent;
+}
+
+.footer__btn:hover {
+  border: 1px solid var(--pink);
+}
+
+.footer__hash {
+  color: var(--pink);
+  font-family: var(--secondFont);
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__nav {
+  margin-bottom: 85px;
+}
+
+.footer__nav_list {
+  justify-content: flex-start;
+}
+
+.footer__nav_list .nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.footer__nav_list .nav__link {
+  color: var(--white);
+}
+
+.footer__nav_list .nav__link:hover {
+  color: var(--green);
+}
+
+.footer__bottom {
+  justify-content: space-between;
+}
+
+.footer__phone * {
+  color: var(--white);
+  font-family: var(--secondFont);
+  font-size: 32px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.phone-number:hover {
+  color: var(--green);
+}
+
+.footer__mute {
+  width: 100%;
+}
+
+@media (max-width: 1400px) {
+
+}
+
+@media (max-width: 1200px) {
+  .footer__nav_list .nav__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__nav {
+    display: none;
+  }
+
+  .footer__top {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .footer__hash {
+    align-self: flex-start;
+    margin-bottom: 45px;
+  }
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .footer__hash {
+    font-size: 24px;
+  }
+
+  .footer__btn {
+    margin-right: 0;
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid var(--green);
+    background: transparent;
+  }
+
+  .footer__phone * {
+    font-size: 22px;
+  }
+
+  .footer__phone:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer::before {
+    transform: skewY(9deg);
+  }
+
+  .footer__container {
+    position: relative;
+    padding: 150px 28px 75px 28px;
+  }
+
+  .footer-paint {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 110px;
+    height: 83px;
+  }
+
+
+}

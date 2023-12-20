@@ -1,0 +1,654 @@
+.dresscode__container {
+  padding: 150px 28px;
+  align-items: flex-start;
+}
+
+.dresscode__description {
+  position: relative;
+  margin-right: 70px;
+}
+
+.dresscode__description * {
+  position: relative;
+  z-index: 5;
+}
+
+.dresscode-light {
+  position: absolute;
+  bottom: -60px;
+  left: 30%;
+  width: 147px;
+  height: 147px;
+  background: var(--pink);
+  filter: blur(45px);
+  z-index: 1;
+}
+
+.dresscode__text {
+  padding-right: 20px;
+}
+
+.dresscode__title {
+  margin-bottom: 70px;
+  color: var(--pink);
+}
+
+.dresscode__subtitle {
+  margin-bottom: 30px;
+  font-family: var(--secondFont);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 91%;
+}
+
+.dresscode__paragraph {
+  text-indent: 15px;
+  line-height: normal;
+}
+
+.dresscode__main {
+  min-width: 480px;
+  max-width: 480px;
+}
+
+.colors-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 88px;
+}
+
+.color-item {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-item::after {
+  content: '';
+  position: absolute;
+  inset: 16px;
+  border-radius: 50%;
+  border: 3px solid var(--white);
+  transition: .3s;
+}
+
+.color-item:hover::after {
+  inset: 0;
+  border: 3px solid transparent;
+}
+
+.color-silver {
+  background: url(../img/dresscode/silver.jpg);
+  background-size: cover;
+}
+
+.color-grey {
+  background-color: #BFC0C2;
+}
+
+.color-pink {
+  background-color: var(--pink);
+}
+
+.color-light-pink {
+  background-color: #F67CBF;
+}
+
+.all-dress-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  margin-bottom: 65px;
+}
+
+.dress-carousel {
+  position: relative;
+  padding-top: 137%;
+}
+
+.carousel-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.item-dress-wrapper {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition: .3s;
+}
+
+.item-dress {
+  min-width: 100%;
+  height: 100%;
+}
+
+.icon-wrapper {
+  position: absolute;
+  top: -39px;
+  left: calc(50% - 39px);
+  width: 78px;
+  height: 78px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.controls-wrapper {
+  position: absolute;
+  bottom: 20px;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.control {
+  width: 35px;
+  height: 35px;
+  background-color: var(--white);
+  border: unset;
+  border-radius: 50%;
+  background-image: url(../img/dresscode/polygon.png);
+  background-repeat: no-repeat;
+  background-position: center left 8px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.control:hover {
+  background-color: var(--green);
+}
+
+.next {
+  transform: scale(-1, 1);
+}
+
+/* POPUP */
+
+.dresscode__window {
+  position: relative;
+  justify-content: space-between;
+  padding: 55px 80px;
+  background-color: var(--white);
+  overflow: hidden;
+}
+
+.vertical-line {
+  width: 5px;
+  height: 100%;
+  background-color: var(--greySecond);
+}
+
+.popup__person {
+  position: relative;
+  width: 50%;
+  padding-top: 55px;
+  padding-bottom: 85px;
+}
+
+.popup__person .icon-wrapper {
+  background-color: #E3E3E3;
+  top: 10px;
+  z-index: 10;
+}
+
+.absolute__photo {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.he-absolute-photo {
+  bottom: -10px;
+  left: calc(50% - 70px);
+  width: 152px;
+  height: 205px;
+  transform: rotate(-11deg);
+}
+
+.she-absolute-photo {
+  top: calc(50% - 90px);
+  left: -90px;
+  width: 129px;
+  height: 174px;
+  transform: rotate(13deg);
+}
+
+.popup__picture {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.popup__picture img {
+  position: relative;
+  z-index: 10;
+}
+
+.he-picture {
+  top: calc(50% - 80px);
+  left: calc(50% - 80px);
+  width: 129px;
+  height: 100px;
+}
+
+.he-light {
+  position: absolute;
+  left: -300px;
+  top: -200px;
+  width: 422px;
+  height: 422px;
+  border-radius: 422px;
+  background: var(--green);
+  filter: blur(45px);
+}
+
+.she-picture {
+  bottom: 20px;
+  right: -30px;
+  width: 128px;
+  height: 128px;
+}
+
+.she-picture-light {
+  position: absolute;
+  top: -6px;
+  width: 132px;
+  height: 132px;
+  background-color: var(--pink);
+  filter: blur(45px);
+  z-index: 5;
+}
+
+.popup__he {
+  margin-right: 85px;
+}
+
+.popup__she {
+  margin-left: 85px;
+}
+
+.popup__scrollbar_wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 134%;
+}
+
+.popup__scrollbar {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.popup__photo_list {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+.popup__item_wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 135%;
+}
+
+.popup__item_wrapper .item-dress {
+  position: absolute;
+  inset: 0;
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--pink);
+}
+
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+  .dresscode-light {
+    top: 150px;
+    bottom: auto;
+    left: 20%;
+  }
+
+  .dresscode__container {
+    padding: 140px 28px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dresscode__description {
+    position: relative;
+    margin-right: 0;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 0 100px;
+  }
+
+  .dresscode__main {
+    align-self: center;
+  }
+}
+
+@media (max-width: 992px) {
+
+  .dresscode__container {
+    padding: 120px 28px;
+  }
+
+  .dresscode__description {
+    padding: 0;
+  }
+
+  .dresscode__title {
+    margin-bottom: 40px;
+  }
+
+  /* POPUP */
+
+  .dresscode__window {
+    position: relative;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--white);
+    overflow: hidden;
+  }
+
+  .popup__he {
+    margin-right: 20px;
+  }
+
+  .popup__she {
+    margin-left: 20px;
+  }
+
+  .she-absolute-photo {
+    top: auto;
+    bottom: 10px;
+    left: 20px;
+  }
+
+  .popup__photo_list {
+    grid-gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dresscode__container {
+    padding: 100px 28px;
+  }
+
+  .dresscode-light {
+    top: 150px;
+    bottom: auto;
+    left: 20%;
+    width: 74px;
+    height: 74px;
+    filter: blur(23px);
+  }
+
+  .dresscode__title {
+    margin-bottom: 20px;
+  }
+
+  .dresscode__subtitle {
+    font-size: 28px;
+  }
+
+  /* POPUP */
+  .dresscode__window {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 60px;
+    background-color: var(--white);
+    overflow: scroll;
+  }
+
+  .vertical-line {
+    width: 100%;
+    min-height: 3px;
+    background-color: var(--greySecond);
+  }
+
+  .popup__person {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+
+  .popup__person .icon-wrapper {
+    top: 20px;
+    left: calc(50% - 40px);
+    padding: 10px;
+  }
+
+  .popup__he {
+    margin-right: 0;
+  }
+
+  .he-absolute-photo {
+    bottom: 30px;
+    left: 33%;
+    width: 125px;
+    height: 150px;
+    transform: rotate(-11deg);
+  }
+
+  .he-picture {
+    top: calc(50% - 50px);
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 95px;
+  }
+
+  .popup__she {
+    margin-left: 0;
+  }
+
+  .she-absolute-photo {
+    top: calc(50% - 60px);
+    left: 33%;
+    width: 132px;
+    height: 155px;
+    transform: rotate(13deg);
+  }
+
+  .she-picture {
+    bottom: 70px;
+    right: 0;
+    width: 88px;
+    height: 88px;
+  }
+
+  .she-picture-light {
+    top: -6px;
+    width: 80px;
+    height: 80px;
+    filter: blur(23px);
+  }
+
+  .dresscode__window .close-wrapper {
+    position: relative;
+    top: auto;
+    bottom: 0;
+    right: auto;
+    z-index: 100;
+    transform: translateY(-30px);
+  }
+
+  .dresscode__window {
+    overflow-x: hidden;
+  }
+
+  .popup__photo_list {
+    grid-gap: 20px;
+  }
+}
+
+@media (max-width: 536px) {
+  .dresscode__container {
+    padding: 70px 28px;
+  }
+
+  .dresscode__description {
+    margin-bottom: 40px;
+  }
+
+  .dresscode__text {
+    padding-right: 0;
+  }
+
+  .dresscode__title {
+    margin-bottom: 10px;
+  }
+
+  .dresscode__subtitle {
+    font-size: 26px;
+  }
+
+  .dresscode__main {
+    min-width: 100%;
+  }
+
+  .all-dress-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .dress-carousel {
+    position: relative;
+    height: 170px;
+  }
+
+  .controls-wrapper {
+    display: none;
+  }
+
+  .dresscode__popup_open {
+    padding: 10px 30px;
+  }
+
+  /* POPUP */
+  .dresscode__window {
+    padding: 0 20px;
+  }
+
+  .he-picture {
+    top: calc(50% - 50px);
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 95px;
+  }
+
+  .she-absolute-photo {
+    top: calc(50% - 60px);
+    left: 33%;
+    width: 102px;
+    height: 125px;
+    transform: rotate(13deg);
+  }
+}
+
+@media (max-width: 460px) {
+  .colors-wrapper {
+    margin-bottom: 53px;
+  }
+
+  .color-item::after {
+    inset: 8px;
+    border: 2px solid var(--white);
+  }
+
+  .icon-wrapper {
+    top: -20px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+  /* POPUP */
+  .dresscode__window {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--white);
+    overflow: scroll;
+  }
+
+  .vertical-line {
+    width: 100%;
+    min-height: 3px;
+    background-color: var(--greySecond);
+  }
+
+  .popup__person {
+    position: relative;
+    width: 100%;
+    padding-top: 55px;
+    padding-bottom: 90px;
+  }
+
+  .popup__person .icon-wrapper {
+    top: 35px;
+    left: calc(50% - 20px);
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+  }
+
+  .he-absolute-photo {
+    bottom: 30px;
+    left: 33%;
+    width: 75px;
+    height: 100px;
+    transform: rotate(-11deg);
+  }
+
+  .he-picture {
+    top: calc(50% - 50px);
+    left: calc(50% - 60px);
+    width: 100px;
+    height: 75px;
+  }
+
+  .she-absolute-photo {
+    top: calc(50% - 60px);
+    left: 33%;
+    width: 82px;
+    height: 105px;
+    transform: rotate(13deg);
+  }
+
+  .she-picture {
+    bottom: 70px;
+    right: 0;
+    width: 68px;
+    height: 68px;
+  }
+
+  .she-picture-light {
+    top: -6px;
+    width: 60px;
+    height: 60px;
+    filter: blur(23px);
+  }
+
+}
