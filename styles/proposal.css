@@ -22,6 +22,17 @@
 
 .proposal__mute {
   width: 100%;
+  justify-content: flex-start;
+}
+
+.proposal-line-text {
+  min-width: 100%;
+  justify-content: space-around;
+  animation: ticker 20s infinite linear;
+}
+
+.proposal-reverse {
+  animation-direction: reverse;
 }
 
 .proposal__content {
@@ -82,7 +93,7 @@
   padding-top: 56%;
   border-radius: 10px;
   overflow: hidden;
-  z-index: 5;
+  z-index: 10;
 }
 
 .proposal__video iframe {
