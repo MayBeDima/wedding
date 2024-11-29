@@ -1,4 +1,4 @@
-const dateOfWedding = new Date(Date.UTC(2024, 6, 5, 8, 0));
+const dateOfWedding = new Date(Date.UTC(2026, 6, 5, 8, 30));
 let timerId = null;
 
 const days = document.querySelector('.timer__day');
@@ -31,6 +31,11 @@ function countdownTimer() {
   hours.textContent = hoursRes < 10 ? '0' + hoursRes : hoursRes;
   minutes.textContent = minutesRes < 10 ? '0' + minutesRes : minutesRes;
   seconds.textContent = secondsRes < 10 ? '0' + secondsRes : secondsRes;
+
+  daysDescr.textContent = declensionNum(daysRes, ['день', 'дня', 'дней']);
+  hoursDescr.textContent = declensionNum(hoursRes, ['час', 'часа', 'часов']);
+  minutesDescr.textContent = declensionNum(minutesRes, ['минута', 'минуты', 'минут']);
+  secondsDescr.textContent = declensionNum(secondsRes, ['секунда', 'секунды', 'секунд']);
 
   daysDescr.textContent = declensionNum(daysRes, ['день', 'дня', 'дней']);
   hoursDescr.textContent = declensionNum(hoursRes, ['час', 'часа', 'часов']);
